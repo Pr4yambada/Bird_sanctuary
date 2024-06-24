@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+   
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik Doodle Shadow"
+      rel="stylesheet"
+    />
+
+    <style>
+      h1 {
+        font-family: "Rubik Doodle Shadow";
+        font-size: 40px;
+      }
+
+      .carousel-inner img {
+        width: 100%;
+        height: 460px;
+      }
+
+      #zoom:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+
+      #link:hover {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+            <h1>
+              <img
+                src="colourbird.jpg"
+                class="img-fluid mx-auto"
+                height="90"
+                width="170"
+              />Bird Sanctuary
+            </h1>
+          </div>
+
+          <div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+            <form
+              class="form-inline"
+              style="margin-top: 35px; margin-left: 60px"
+            >
+              <div class="input-group">
+                <input
+                  class="form-control mr-sm-2"
+                  type="text"
+                  placeholder="Search...."
+                />
+                <button class="btn btn-success" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md bg-secondary navbar-dark sticky-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li
+              class="nav-item active"
+              style="border-bottom: 2px solid #00b3aa; font-size: 17px"
+            >
+              <a
+                class="nav-link"
+                href="home.html"
+                style="width: 110px; text-align: center"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="about.html"
+                style="width: 160px; text-align: center"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="news.html"
+                style="width: 160px; text-align: center"
+                >News</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="gallery.html"
+                style="width: 110px; text-align: center"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="Contact.html"
+                style="width: 110px; text-align: center"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="swan.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="parrot.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="chimni.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h1 style="text-align: center">- About -</h1>
+          </div>
+          <br />
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <p style="font-size: 20px; line-height: 28px; text-align: justify">
+              Sultanpur Bird Sanctuary is a very popular national park of India.
+              Located in Sultanpur village, Farukhnagar, Gurugram district in
+              Haryana state. Sultanpur village is located 40 km from Dhaula Kuan
+              in Delhi and 15 km from Gurugram city on the Gurugram – Jhajjar
+              highway. This bird sanctuary, ideal for birding and bird lookers,
+              is best visited in winters when many migratory birds come here.
+              <br />
+              <br />
+              Haryana government has carried out a number of development works
+              at Sultanpur Bird Sanctuary like construction of mounds, widening
+              of paths, and digging four tube wells. Efforts are being made to
+              improve vegetation in the area by planting more trees, which are
+              popular with the birds like ficus spp. Acacia Nilotica, Acacia
+              Tortilis, Beris and Neem.
+              <br />
+              <br />
+              Among approximately 1,800 migratory bird species out of total
+              approximately 9,000-10,000 species of birds in the world, nearly
+              three thousand species migrate to India due to seasonal changes,
+              including 175 long-distance migration species that use the Central
+              Asian Flyway route which also include Amur falcons, Egyptian
+              vultures, plovers, ducks, storks, ibises, flamingos, jacanas,
+              pochards and sociable lapwing. Among these approximately 250
+              species of Birds are found at Sultanpur Bird Sanctuary. Some of
+              them are resident, while others come from distant regions like
+              Siberia, Europe and Afghanistan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <br />
+        <hr />
+        <br />
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <a href="WeightLoss.html#WeightLossSection1" style="color: #cd6a1f"
+              ><img
+                id="zoom"
+                src="barn.jpg"
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 id="link" style="text-align: center; color: #b38600">
+                view in gallery
+              </h4></a
+            >
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <a href="WeightLoss.html#WeightLossSection2" style="color: #cd6a1f"
+              ><img
+                id="zoom"
+                src="orr.jpg"
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 id="link" style="text-align: center; color: #b38600">
+                view in gallery
+              </h4></a
+            >
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <a href="" style="color: #cd6a1f"
+              ><img
+                id="zoom"
+                src=""
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 id="link" style="text-align: center; color: #b38600">
+                view in gallery
+              </h4></a
+            >
+          </div>
+        </div>
+        <br /><br /><br />
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <a href="1WeekDietPlan.html" style="color: #cd6a1f"
+              ><img
+                id="zoom"
+                src="barn.jpg"
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 id="link" style="text-align: center; color: #b38600">
+                view in gallery
+              </h4></a
+            >
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <a href="WeightGain.html#WeightGainSection2" style="color: #cd6a1f"
+              ><img
+                id="zoom"
+                src="img/HealthyEating.jpg"
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 id="link" style="text-align: center; color: #b38600">
+                view in gallery
+              </h4></a
+            >
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <a href="Workout.html#Exercise" style="color: #cd6a1f"
+              ><img
+                id="zoom"
+                src="img/running3.png"
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 id="link" style="text-align: center; color: #b38600">
+                view in gallery
+              </h4></a
+            >
+          </div>
+        </div>
+      </div>
+      <hr />
+      <br />
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h4
+            style="
+              text-align: justify;
+              padding-left: 150px;
+              padding-right: 200px;
+            "
+          >
+            <b
+              >"Give food to the birds, you will then be surrounded by the wings
+              of love, you will be encompassed by the joys of little silent
+              hearts! "</b
+            >
+          </h4>
+          <h5 align="right" style="padding-right: 200px">
+            - Dr Mehmet Murat Ildan
+          </h5>
+        </div>
+      </div>
+    </section>
+    <br />
+
+    <footer class="bg-dark">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h4>@ 2023 Bird Sanctuary . All Copy Rights Reserved.</h4>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
